@@ -1,0 +1,365 @@
+.nav-link {
+    position: relative;
+    font-size: 15px;
+    padding-bottom: 5px;
+  }
+
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    background-color: #ffffff; /* Change the color as needed */
+    transition: width 0.3s ease-in-out;
+  }
+
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  /* ................................................................................................................. */
+  /* Background image with overlay */
+/* Background image with overlay */
+.bg-overlay {
+    position: relative;
+    background-image: url('img/home2.jpeg'); /* Add your background image URL */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0; /* Adjust padding as needed */
+    color: white;
+    height: 89vh;
+    width:100%;
+    /* max-width: 100%; Ensures the image never exceeds the viewport width */
+  }
+  
+  /* Overlay effect */
+  .bg-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1;
+  }
+  
+  /* Text positioning */
+  .bg-overlay .row {
+    position: relative;
+    z-index: 2; /* Make sure text is above the overlay */
+    text-align: start; /* Center text */
+  }
+  
+  .bg-overlay h5 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .bg-overlay h1 {
+    font-size: 60px;
+    font-weight: bold;
+  }
+  /* Button styling */
+.btn-read-more {
+    padding: 10px 20px;
+    background-color: #ffffff; /* Button background color */
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover */
+  }
+  
+  /* Hover effect */
+  .btn-read-more:hover {
+    background-color: #106d92; /* Change to a darker shade on hover */
+    transform: scale(1.05); /* Slightly increase the size */
+    color: white;
+  }.btn-read-more {
+    width: 50%; /* Default for smaller devices */
+}
+
+/* Media query for larger screens */
+@media (min-width: 592px) { /* Adjust this value for 'lg' screens */
+    .btn-read-more {
+        width: 15%; /* Width for larger devices */
+    }
+}
+
+  /* card................................................................................................................ */
+  /* Card box with shadow effect */
+.card-box {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px; /* Slightly round the corners */
+    box-shadow: 0 4px 8px rgb(192, 192, 192); /* Box shadow for the card */
+    margin-bottom: 20px; /* Space between rows if needed */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover */
+    height: 300px;
+  }
+  
+  /* Hover effect for card */
+  .card-box:hover {
+    transform: translateY(-5px); /* Lift the card slightly on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  }
+  
+  /* Icon styling */
+  .icon {
+    font-size: 40px; /* Adjust the size of the icons */
+    color: #296ce7;  /* Icon color */
+    margin-bottom: 10px; /* Space between icon and heading */
+    background-color: rgb(157, 252, 244);
+    padding: 20px;
+    border-radius: 20px 0 20px 0;
+  }
+  
+  /* Heading styling */
+  h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Paragraph styling */
+  p {
+    font-size: 16px;
+    color: #666; /* Gray color for the paragraph */
+    margin-bottom: 20px;
+  }
+  /* ..................................................................................................... */
+  /* Styling for the tick icon */
+.tick-icon {
+    color: #003cff; /* Custom color for the tick icon */
+    font-size: 20px; /* Adjust the size of the icon */
+    margin-right: 10px; /* Space between the icon and the text */
+    margin-top: 5px; /* Align icon properly with text */
+}
+
+/* Styling for paragraphs inside the divs */
+.col p {
+    font-size: 16px;
+    color: #666; /* Text color */
+    margin: 0; /* Remove margin to align better */
+}
+
+/* Align the icon and text properly */
+.col {
+    margin-bottom: 10px; /* Space between the rows */
+    display: flex;
+    align-items: start;
+}
+/* services............................................................................................................*/
+.service-item {
+    position: relative; /* Allows positioning of the left line */
+    padding-left: 20px; /* Space for the left line */
+    border-left: 3px solid #0077ff; /* Adjust color as needed */
+    margin-bottom: 20px; /* Space between items */
+}
+
+.service-item i {
+    font-size: 30px; /* Size of the icon */
+    color: #002fff; /* Color of the icon */
+    display: block; /* Make the icon block level */
+    margin-bottom: 10px; /* Space below the icon */
+}
+/* member........................................................................................................................ */
+/* Set fixed height for images */
+.img-fluid {
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Styling for the card and overlay */
+.card-container {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card-container:hover {
+  transform: scale(1.05);
+}
+
+.card {
+  position: relative;
+  /* border: 1px solid black; */
+  box-shadow: rgba(17, 17, 26, 0.301) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 40%;
+  width: 100%;
+  height: 80%;
+  background: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: column; /* Align icons vertically */
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay i {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  margin: 10px 0; /* Add vertical space between icons */
+}
+
+/* Styling for text below images */
+h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.parapraph {
+  font-size: 1rem;
+  color: #2b2a2a;
+}
+/* blog............................................................................................... */
+.blog-post {
+  text-align:start;
+  margin-bottom: 30px;
+}
+
+.blog-post img {
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.blog-post h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.blog-post p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.blog-post .btn {
+  background-color: #ff5e00;
+  color: #fff;
+  border: none;
+}
+
+.blog-post .btn:hover {
+  background-color: #333;
+}
+/* reiew............................................................................................... */
+.client-review {
+  text-align: center;
+  border: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.356);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.client-img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.review-text {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.client-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+button {
+  margin: 10px;
+}
+/* footer........................................................................................ */
+.footer {
+  background-color: #e6e6e6;
+  color: #000000;
+}
+
+.footer h5 {
+  font-size: 1.2rem;
+}
+
+.footer p {
+  font-size: 1rem;
+  color: #000000;
+}
+
+.social-icons a {
+  color: #000000;
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+.social-icons a i:hover {
+  color: #0a29b1;
+box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.footer ul li i {
+  color: #006eff;
+}
+
+.footer ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  color: #1460ec;
+}
+
+.footer .form-control {
+  background-color: #454d55;
+  color: #000000;
+  border: none;
+
+}
+
+.footer .form-control::placeholder {
+  color: #cccccc;
+}
+
+.footer .btn-primary {
+  background-color: #006eff;
+  border: none;
+}
+
+.footer .btn-primary:hover {
+  background-color: #353fce;
+}
+
+.footer .input-group .btn {
+  background-color: #006eff;
+  border: none;
+  color: #ffffff;
+}
+
+.footer .input-group .btn:hover {
+  background-color: #006eff;
+}

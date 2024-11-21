@@ -1,0 +1,99 @@
+.nav-link {
+    position: relative;
+    font-size: 18px;
+    padding-bottom: 5px;
+  }
+
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    background-color: #ffffff; /* Change the color as needed */
+    transition: width 0.3s ease-in-out;
+  }
+
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  /* * footer........................................................................................ */ 
+.footer {
+  background-color: #e6e6e6;
+  color: #000000;
+}
+
+.footer h5 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.footer p {
+  font-size: 1rem;
+  color: #000000;
+}
+
+.social-icons a {
+  color: #000000;
+  margin-right: 15px;
+  font-size: 1.5rem;
+}
+
+.social-icons a:hover {
+  color: #0aa6b1;
+border-radius: 50px;
+box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #000000;
+}
+
+.footer ul li i {
+  margin-right: 4px;
+  color: #006eff;
+}
+
+.footer ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  color: #1460ec;
+}
+
+.footer .form-control {
+  background-color: #454d55;
+  color: #000000;
+  border: none;
+  height: 50px;
+
+}
+
+.footer .form-control::placeholder {
+  color: #cccccc;
+}
+
+.footer .btn-primary {
+  background-color: #006eff;
+  border: none;
+}
+
+.footer .btn-primary:hover {
+  background-color: #353fce;
+}
+
+.footer .input-group .btn {
+  background-color: #006eff;
+  border: none;
+  color: #ffffff;
+  height: 50px;
+}
+
+.footer .input-group .btn:hover {
+  background-color: #006eff;
+}
